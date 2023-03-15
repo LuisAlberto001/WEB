@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMG/tecnm.png">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <title>Examen</title>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+        <a href="Examen.html"><figure><img src="../IMG/tecnm.png" height="75px" width="75px" alt="tecnm"></figure></a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a  href='https://api.whatsapp.com/send?phone=522712549431&text=Hola'
+            target='_blank'
+            rel='noreferrer'>Contactanos</a>
+        </nav>
+    </div>
+    
+    <div class="over">
+        <h1>Formulario Basico CINE</h1>
+        <form action="../PHP/mostrar.php" method="POST">
+            <label for="nombre">Nombre pelicula:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="boletos">Boletos:</label>
+            <select name="boletos" id="boletos">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <label for="boletos">Numero Aciento:</label>
+            <select name="boletos" id="boletos">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion" id="descripcion" cols="20" rows="5"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

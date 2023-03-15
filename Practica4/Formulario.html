@@ -21,5 +21,27 @@
             rel='noreferrer'>Contactanos</a>
         </nav>
     </div>
+    
+    <div class="over">
+        <h1>Formulario Basico Farmacia</h1>
+        <form action="../PHP/mostrar.php" method="POST">
+            <label for="nombre">Nombre Medicamento:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="gramaje">Gramaje:</label>
+            <input type="text" id="gramaje" name="gramaje" required>
+            <label for="distribuidor">Distribuidor:</label>
+            <select name="distribuidor" id="distribuidor">
+                <option value="Pfizer">Pfizer</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="Novartis">Novartis</option>
+                <option value="Bayer">Bayer</option>
+                <option value="Roche">Roche</option>
+                <option value="Johnson & Johnson">Johnson & Johnson</option>
+            </select>
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion" id="descripcion" cols="20" rows="5"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
